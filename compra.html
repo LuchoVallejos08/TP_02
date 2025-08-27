@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="">
+        <h1>NeoLife</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="cupones.html">Cupones</a></li>
+                <li><a href="info.html">Informacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="compra">
+        <h2>Finalizá tu compra</h2>
+        <form action="graciasCompra.html" method="post">
+            <select name="producto" required>
+                <option value="">Seleccioná un producto</option>
+                <option value="neoTrack">NeoTrack - $419.99</option>
+                <option value="neoTaste">NeoTaste - $289.99</option>
+                <option value="neoPet">NeoPet - $399.99</option>
+                <option value="neoWrite">NeoWrite - $349.99</option>
+                <option value="neoChef">NeoChef - $1099.99</option>
+                <option value="neoLight">NeoStep - $549.99</option>
+            </select>
+
+            <p>Cantidad: </p>
+            <input type="number" name="cantidad" min="1" max="100" value="1" required>
+
+            <p>Nombre: </p>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+
+            <p>Apellido: </p>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+
+            <p>Email: </p>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <p>Teléfono: </p>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+
+            <p>Dirección de Envio: </p>
+            <input type="text" name="direccion" placeholder="Calle, número, ciudad" required>
+
+            <p>Cupon de Descuento (Opcional): </p>
+            <input type="text" name="codigo" placeholder="Cupón de descuento">
+
+            <p>Metodo de Pago: </p>
+            <select id="pago" name="pago" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="debito">Tarjeta de débito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="efectivo">Pago en efectivo</option>
+            </select>
+
+            <input type="submit" value="Comprar">
+            <input type="reset" value="Borrar">
+        </form>
+    </section>
+    </main>
+    <footer>
+        <div class="footer">
+                <h3>Contacto</h3>
+                <p>Email: contacto@neolife.com</p>
+                <p>Tel: +54 11 1234-5678</p>
+                <a href="contacto.html">Formulario de contacto</a>
+            </div>
+            <div class="footer">
+                <h3>Redes Sociales</h3>
+                <a href="index.html">Instagram</a> |
+                <a href="index.html">Facebook</a> |
+                <a href="index.html">Twitter</a>
+            </div>
+            <div class="footer">
+                <h3>NeoLife</h3>
+                <p>Innovación para tu día a día.</p>
+                <p>© 2025 NeoLife. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+</body>
+</html>
