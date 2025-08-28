@@ -128,8 +128,10 @@ body{
 }
 
 .unidad{
-    width: 60%;
+    width: 80%;
     height: 50%;
+    margin-left: 10%;
+    margin-top: 2.5%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -137,11 +139,12 @@ body{
     background-color: #8faebd;
     border-radius: 10px;
     border: 3px solid #000000;
-    margin: 3%;
 }
 
 .unidad img{
     width: 30%;
+    height: 30%;
+    margin: auto;
 }
 
 .textoUnidad h2, .textoUnidad p{
@@ -150,12 +153,15 @@ body{
     border: #4eb8be;
     border-radius: 10px;
     width: 40%;
-    margin-left: 30%;
+    margin-left: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .textoUnidad button{
-    margin-top: 6%;
+    margin-top: 3%;
     margin-bottom: 2%;
+    padding: 2%;
 }
 
 .gracias{
@@ -198,6 +204,15 @@ body{
   padding-right: 2%;
   padding-bottom: 1%;
   margin-bottom: 1%;
+}
+
+.layoutCupones{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    margin: auto;
 }
 
 .comentarios{
